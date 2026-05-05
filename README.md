@@ -1,6 +1,6 @@
 # skills
 
-A collection of reusable skills for Copilot CLI.
+A collection of useful skills for Copilot CLI and beyond.
 
 ## Collections
 
