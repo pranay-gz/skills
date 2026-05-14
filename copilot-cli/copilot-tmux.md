@@ -46,3 +46,13 @@ tmux new-session -d -s <name> -c <working-dir> "copilot --model claude-sonnet-4.
 ```
 Session '<name>' started. Switch to it with:  tmux attach -t <name>
 ```
+
+## 4 · Kill session when done
+
+Once the agent inside the tmux session has **fully completed its task**, it must kill its own session:
+
+```bash
+tmux kill-session -t <name>
+```
+
+> ⚠️ Run this only after the task is entirely finished — not when the skill is first loaded, not mid-task. The session should be killed as the final step.
